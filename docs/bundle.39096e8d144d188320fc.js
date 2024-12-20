@@ -42,16 +42,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./assets/fonts/Roboto-Regular.woff":
-/*!******************************************!*\
-  !*** ./assets/fonts/Roboto-Regular.woff ***!
-  \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "assets/fonts/Roboto-Regular.f337b8880ca3d4b5b874.woff";
-
-/***/ }),
-
 /***/ "./assets/images/word-hey.jpg":
 /*!************************************!*\
   !*** ./assets/images/word-hey.jpg ***!
@@ -164,8 +154,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/style.less */ "./styles/style.less");
 /* harmony import */ var _js_script__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../js/script */ "./js/script.js");
 /* harmony import */ var _assets_images_word_hey_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/images/word-hey.jpg */ "./assets/images/word-hey.jpg");
-/* harmony import */ var _assets_fonts_Roboto_Regular_woff__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/fonts/Roboto-Regular.woff */ "./assets/fonts/Roboto-Regular.woff");
-
 
 
 

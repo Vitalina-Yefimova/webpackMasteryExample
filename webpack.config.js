@@ -1,6 +1,6 @@
 const path = require('path') // Подключение модуля 'path' для работы с путями в файловой системе
 const HtmlWebpackPlugin = require('html-webpack-plugin') // Подключение плагина HtmlWebpackPlugin для работы с HTML-файлами на основе шаблона
-const CopyWebpackPlugin = require('copy-webpack-plugin') // Плагин для копирования файлов
+// const CopyWebpackPlugin = require('copy-webpack-plugin') // Плагин для копирования файлов
 const { CleanWebpackPlugin } = require('clean-webpack-plugin') // Плагин для очистки директории с выходными файлами перед каждой новой сборкой
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // Плагин для извлечения CSS-кода в отдельные файлы
 const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin') // Плагин для минимизации CSS-кода (удаляет проблеы, комменты и оптимизирует стили)
@@ -54,19 +54,19 @@ const setPlugins = () => {
       template: './index.html' // Исходный HTML для использования в качестве шаблона
     }),
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin({
-       patterns: [ // patterns - список правил для копирования файлов, где указывается исходный путь (from) и путь назначения (to)
-        {
-          from: path.resolve(__dirname, 'src/assets/images/word-hey.jpg'), // Абсолютный путь к директории, в которую будут выводиться скомпилированные файлы
-          // __dirname -  это переменная, которая указывает абсолютный путь к каталогу, содержащему текущий исполняемый файл
-          to: path.resolve(__dirname, 'docs/assets/images'),
-        },
-        {
-          from: path.resolve(__dirname, 'src/assets/fonts/Roboto-Regular.woff'),
-          to: path.resolve(__dirname, 'docs/assets/fonts'),
-        },
-      ],
-    }),
+    // new CopyWebpackPlugin({
+    //    patterns: [ // patterns - список правил для копирования файлов, где указывается исходный путь (from) и путь назначения (to)
+    //     {
+    //       from: path.resolve(__dirname, 'src/assets/images/word-hey.jpg'), // Абсолютный путь к директории, в которую будут выводиться скомпилированные файлы
+    //       // __dirname -  это переменная, которая указывает абсолютный путь к каталогу, содержащему текущий исполняемый файл
+    //       to: path.resolve(__dirname, 'docs/assets/images'),
+    //     },
+    //     {
+    //       from: path.resolve(__dirname, 'src/assets/fonts/Roboto-Regular.woff'),
+    //       to: path.resolve(__dirname, 'docs/assets/fonts'),
+    //     },
+    //   ],
+    // }),
     new MiniCssExtractPlugin({
       filename: 'assets/styles/style.[contenthash].css', // Сохранение всех CSS-файлов в папку styles
     }),
